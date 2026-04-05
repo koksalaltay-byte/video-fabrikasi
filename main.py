@@ -26,9 +26,9 @@ change_settings({"FFMPEG_BINARY": imageio_ffmpeg.get_ffmpeg_exe()})
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # --- CONFIG ---
-GEMINI_API_KEY = "AIzaSyBnRxnUWcMyu5HpkctCYnDwzNdqTVuQDYY"
-PEXELS_API_KEY = "ck3EG8GXIroLQy5yOHBVxks1GwEWCDeuW8K98RkiIQNSHsIwvVkqqquH"
-MONGO_URL = "mongodb+srv://koksalaltay:bnvwA6Mn445nR5Mi@video.r65zkuu.mongodb.net/?retryWrites=true&w=majority&appName=video"
+GEMINI_API_KEY = os.environ.get("AIzaSyBnRxnUWcMyu5HpkctCYnDwzNdqTVuQDYY", "")
+PEXELS_API_KEY = os.environ.get("ck3EG8GXIroLQy5yOHBVxks1GwEWCDeuW8K98RkiIQNSHsIwvVkqqquH", "")
+MONGO_URL = os.environ.get("mongodb+srv://koksalaltay:bnvwA6Mn445nR5Mi@video.r65zkuu.mongodb.net/?retryWrites=true&w=majority&appName=video", "")
 OUTPUT_DIR = "/tmp/videofabrikasi"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
