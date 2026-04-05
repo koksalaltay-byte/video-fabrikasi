@@ -248,7 +248,7 @@ def uretim_dongusu_api(job_id: str, konu: str, dil: str):
 
                 clip = VideoFileClip(temp_v).loop(duration=audio.duration + 0.5)
                 hedef_w = int(clip.h * 9 / 16)
-                clip_dik = clip.crop(x_center=clip.w / 2, width=hedef_w).resize((1080, 1920))
+                clip_dik = clip.crop(x_center=clip.w / 2, width=hedef_w).resize((720, 1920))
                 final = clip_dik.set_audio(audio)
 
                 f_adi = dosya_temizle(veri['b'])[:50]
