@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pymongo[srv]
+certifi
+edge-tts
+moviepy
+Pillow
+requests
+imageio-ffmpeg
+python-multipart
