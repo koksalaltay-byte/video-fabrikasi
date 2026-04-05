@@ -3,7 +3,7 @@ uvicorn[standard]
 pymongo[srv]
 certifi
 edge-tts
-moviepy
+moviepy==1.0.3
 Pillow
 requests
 imageio-ffmpeg
